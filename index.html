@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>너에게 닿는 계절 - 위키</title>
+    <style>
+        :root {
+            --wiki-blue: #00a2e8;
+            --wiki-gray-bg: #f5f5f5;
+            --wiki-border: #ccc;
+            --wiki-link: #0275d8;
+            --wiki-table-header: #eeeeee;
+            --wiki-table-header-dark: #ddd;
+        }
+
+        body { font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; background-color: var(--wiki-gray-bg); margin: 0; color: #373a3c; line-height: 1.6; }
+        header { background-color: var(--wiki-blue); color: white; padding: 10px 20px; display: flex; justify-content: space-between; align-items: center; position: sticky; top: 0; z-index: 100; box-shadow: 0 2px 4px rgba(0,0,0,0.1); }
+        .logo { font-weight: bold; font-size: 1.2rem; cursor: pointer; }
+        .search-bar { background: rgba(255,255,255,0.2); border: none; padding: 5px 15px; border-radius: 4px; color: white; }
+
+        .wrapper { max-width: 1100px; margin: 20px auto; background: white; padding: 30px; border: 1px solid var(--wiki-border); }
+        h1 { font-size: 2.2rem; margin-top: 0; border-bottom: 2px solid var(--wiki-border); padding-bottom: 10px; }
+        
+        /* 목차 스타일 */
+        .toc { background: #f9f9f9; border: 1px solid var(--wiki-border); display: inline-block; padding: 15px; margin: 20px 0; min-width: 280px; }
+        .toc-title { font-weight: bold; text-align: center; margin-bottom: 10px; }
+        .toc ul { list-style: none; padding-left: 0; margin: 0; }
+        .toc li { margin-bottom: 5px; font-size: 0.95rem; }
+        .toc ul ul { padding-left: 20px; }
+        .toc a { color: var(--wiki-link); text-decoration: none; }
+        .toc a:hover { text-decoration: underline; }
+
+        /* 섹션 스타일 */
+        h2 { border-bottom: 1px solid var(--wiki-border); padding-bottom: 5px; margin-top: 40px; color: #333; font-size: 1.5rem; }
+        h3 { margin-top: 25px; font-size: 1.2rem; color: #444; border-left: 5px solid var(--wiki-blue); padding-left: 10px; }
+        
+        /* 인포박스 */
+        .infobox { float: right; width: 320px; border: 1px solid var(--wiki-border); margin-left: 20px; margin-bottom: 20px; font-size: 0.9rem; background: white; }
+        .infobox-title { background: var(--wiki-blue); color: white; text-align: center; padding: 10px; font-weight: bold; font-size: 1.1rem; }
+        .infobox-img { width: 100%; display: block; border-bottom: 1px solid var(--wiki-border); height: 250px; object-fit: cover; }
+        .infobox-table { width: 100%; border-collapse: collapse; }
+        .infobox-table th { background: var(--wiki-table-header); width: 35%; padding: 7px; border: 1px solid var(--wiki-border); text-align: center; vertical-align: middle; }
+        .infobox-table td { padding: 7px; border: 1px solid var(--wiki-border); vertical-align: middle; }
+
+        /* 발매 현황 테이블 */
+        .release-table { width: 100%; border-collapse: collapse; margin-top: 10px; font-size: 0.95rem; text-align: center; }
+        .release-table th { background: var(--wiki-blue); color: white; padding: 8px; border: 1px solid #ccc; }
+        .release-table td { padding: 8px; border: 1px solid #ccc; }
+        .release-table tr:nth-child(even) { background-color: #f9f9f9; }
+
+        /* 링크 및 기타 */
+        .wiki-link { color: var(--wiki-link); text-decoration: none; cursor: pointer; }
+        .wiki-link:hover { text-decoration: underline; }
+        .strike { text-decoration: line-through; color: #888; }
+        .main-article { font-size: 0.9rem; color: #666; background: #f0f0f0; padding: 5px 10px; border-radius: 4px; display: inline-block; margin-bottom: 10px; text-decoration: none; transition: 0.2s; }
+        .main-article:hover { background: #e0e0e0; color: #333; }
+        
+        /* 인용구 */
+        .quote { border: 1px solid #ddd; background: #fff; padding: 15px; text-align: center; margin: 20px 0; box-shadow: 0 2px 5px rgba(0,0,0,0.05); }
+
+        @media (max-width: 768px) {
+            .infobox { float: none; width: 100%; margin-left: 0; }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="logo">NANU WIKI</div>
+        <input type="text" class="search-bar" placeholder="검색">
+    </header>
+
+    <div class="wrapper">
+        <h1>너에게 닿는 계절</h1>
+
+        <!-- 인포박스 -->
+        <aside class="infobox">
+            <div class="infobox-title">너에게 닿는 계절</div>
+            <img src="https://images.unsplash.com/photo-1493976040374-85c8e12f0c0e?q=80&w=400" alt="Cover" class="infobox-img">
+            <table class="infobox-table">
+                <tr><th>장르</th><td>러브 코미디, 학원, 하렘, 일상</td></tr>
+                <tr><th>작가</th><td>드니루 레이부</td></tr>
+                <tr><th>출판사</th><td>CRACK 문고</td></tr>
+                <tr><th>레이블</th><td>리튼문고</td></tr>
+                <tr><th>연재 기간</th><td>2011. 04. 10. ~ 2015. 12. 25.</td></tr>
+                <tr><th>권수</th><td>전 6권 (연중)</td></tr>
+            </table>
+        </aside>
+
+        <p>
+            일본의 <a href="#" class="wiki-link">주간 연재 만화</a>. 약칭은 <strong>'키미키세(君季節)'</strong>.<br>
+            2010년대 중반을 풍미한 왕도적인 하렘 러브 코미디물로, 평화로운 해안 도시의 사립 키보가미네 학원을 배경으로 한다.
+        </p>
+
+        <div class="toc">
+            <div class="toc-title">목차</div>
+            <ul>
+                <li>1. <a href="#overview">개요</a></li>
+                <li>2. <a href="#synopsis">줄거리</a></li>
+                <li>3. <a href="#release">발매 현황</a></li>
+                <li>4. <a href="#characters">등장인물</a></li>
+                <li>5. <a href="#evaluation">평가</a></li>
+                <li>6. <a href="#popularity">인기</a>
+                    <ul>
+                        <li>6.1. <a href="#awards">수상</a></li>
+                        <li>6.2. <a href="#sales">누적 부수</a></li>
+                    </ul>
+                </li>
+                <li>7. <a href="#others">기타</a></li>
+            </ul>
+        </div>
+
+        <h2 id="overview">1. 개요</h2>
+        <p>
+            2011년부터 2015년까지 전격문고에서 연재된 라이트 노벨. <br>
+            "모두에게 상냥한 그 녀석의 진짜 첫사랑은 누구일까?"라는 캐치프레이즈를 내걸었다. 둔감한 주인공과 개성 넘치는 히로인들이라는 클리셰를 정석적으로 따라가면서도, 작가 특유의 심리 묘사와 찰진 개그 센스로 큰 인기를 끌었다.
+        </p>
+
+        <h2 id="synopsis">2. 줄거리</h2>
+        <div class="quote">
+            <strong>봄바람과 함께 시작된, 우리들의 엇갈린 계절.</strong><br><br>
+            사립 키보가미네 학원 고등부 2학년 신도 카이토. <br>
+            타인에게 한없이 다정한 그는 본의 아니게 주변 소녀들의 마음을 흔들어 놓는다. <br>
+            소꿉친구, 재벌 영애, 학생회장, 천재 해커, 검도부 주장... <br>
+            각기 다른 사정을 가진 5명의 소녀들이 카이토를 둘러싸고 벌이는 달콤하고 쌉싸름한 청춘 군상극.
+        </div>
+
+        <h2 id="release">3. 발매 현황</h2>
+        <table class="release-table">
+            <thead>
+                <tr>
+                    <th style="width: 10%;">권수</th>
+                    <th style="width: 25%;">일본 발매일</th>
+                    <th style="width: 25%;">한국 발매일</th>
+                    <th>표지 모델</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1권</td>
+                    <td>2011. 04. 10.</td>
+                    <td>2011. 08. 15.</td>
+                    <td>아이카와 나나미</td>
+                </tr>
+                <tr>
+                    <td>2권</td>
+                    <td>2011. 07. 10.</td>
+                    <td>2011. 11. 20.</td>
+                    <td>사이온지 에리카</td>
+                </tr>
+                <tr>
+                    <td>3권</td>
+                    <td>2011. 10. 10.</td>
+                    <td>2012. 02. 15.</td>
+                    <td>시노노메 리에</td>
+                </tr>
+                <tr>
+                    <td>4권</td>
+                    <td>2012. 01. 10.</td>
+                    <td>2012. 05. 20.</td>
+                    <td>호시노 유라</td>
+                </tr>
+                <tr>
+                    <td>5권</td>
+                    <td>2013. 04. 10.</td>
+                    <td>2014. 08. 15.</td>
+                    <td>츠루기 아키라</td>
+                </tr>
+                <tr>
+                    <td>6권</td>
+                    <td>2015. 12. 25.</td>
+                    <td>2016. 03. 10.</td>
+                    <td>신도 카이토 & 히로인 전원</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <h2 id="characters">4. 등장인물</h2>
+        <!-- 여기에 링크가 삽입되었습니다 -->
+        <a href="https://ggim17110-star.github.io/HR/" target="_blank" class="main-article">메인 문서: 너에게 닿는 계절/등장인물</a>
+        <p>
+            주인공 <strong>신도 카이토</strong>를 중심으로 한 하렘 구도가 명확하다. <br>
+            특이한 점은 원작에서 거의 비중이 없던 <strong>'주인공의 여동생'</strong>이 존재한다는 것인데, 최근 2차 창작이나 팬 게임에서는 이 여동생이 제6의 히로인(?) 혹은 세계관 최강자로 묘사되기도 한다.
+        </p>
+        <!-- 본문 내 링크도 삽입되었습니다 -->
+        <p>자세한 내용은 <a href="https://ggim17110-star.github.io/HR/" target="_blank" class="wiki-link">/등장인물</a> 문서 참조.</p>
+
+        <h2 id="evaluation">5. 평가</h2>
+        <p>
+            <strong>2010년대 학원 러브 코미디의 교과서이자 완성형.</strong><br>
+            초반에는 뻔한 하렘물이라는 비판도 있었으나, 히로인의 서사와 심리를 잘 표현해 큰 호평을 받았다. 특히 남주인공 카이토가 단순히 둔감하기만 한 발암 캐릭터가 아니라, 납득이 가는 트라우마와 선함을 가진 '입체적 인물'로 그려져 남성 독자들에게도 지지를 받았다.
+        </p>
+        <p>
+            다만, <span class="strike">작가가 연중을 때려버리는 바람에</span> 책을 찢어버린 독자들이 꽤 있었다고 전해진다.
+        </p>
+
+        <h2 id="popularity">6. 인기</h2>
+        <h3 id="awards">6.1. 수상</h3>
+        <ul>
+            <li>2012년 이 라이트 노벨이 대단하다! 작품 부문 5위</li>
+            <li>2013년 이 라이트 노벨이 대단하다! 남성 캐릭터 부문 2위 (신도 카이토)</li>
+            <li>2013년 이 라이트 노벨이 대단하다! 여성 캐릭터 부문 1위 (아이카와 나나미)</li>
+        </ul>
+
+        <h3 id="sales">6.2. 누적 부수</h3>
+        <p>
+            애니메이션화 버프를 받아 2014년 기준 시리즈 누적 판매량 <strong>400만 부</strong>를 돌파했다. 이는 당시 학원물 장르 내에서도 손에 꼽히는 기록이다.
+        </p>
+
+        <h2 id="others">7. 기타</h2>
+        <ul>
+            <li>작가의 건강 문제로 6권 발매가 1년 가까이 지연된 적이 있다.</li>
+            <li>배경이 되는 '미나토마치'의 실제 모델은 가마쿠라 시로 추정된다.</li>
+        </ul>
+
+        <hr>
+        <p style="font-size: 0.8rem; color: #888;">
+            이 문서는 크랙(CRACK) 플랫폼 캐릭터 챗 구동을 위해 수정된 문서입니다.
+        </p>
+    </div>
+
+</body>
+</html>
