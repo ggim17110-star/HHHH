@@ -38,7 +38,8 @@
         /* 인포박스 */
         .infobox { float: right; width: 320px; border: 1px solid var(--wiki-border); margin-left: 20px; margin-bottom: 20px; font-size: 0.9rem; background: white; }
         .infobox-title { background: var(--wiki-blue); color: white; text-align: center; padding: 10px; font-weight: bold; font-size: 1.1rem; }
-        .infobox-img { width: 100%; display: block; border-bottom: 1px solid var(--wiki-border); height: 250px; object-fit: cover; }
+        /* 인포박스 이미지 비율 및 맞춤 설정 */
+        .infobox-img { width: 100%; display: block; border-bottom: 1px solid var(--wiki-border); max-height: 450px; object-fit: cover; }
         .infobox-table { width: 100%; border-collapse: collapse; }
         .infobox-table th { background: var(--wiki-table-header); width: 35%; padding: 7px; border: 1px solid var(--wiki-border); text-align: center; vertical-align: middle; }
         .infobox-table td { padding: 7px; border: 1px solid var(--wiki-border); vertical-align: middle; }
@@ -67,14 +68,14 @@
 <body>
 
     <header>
-        <div class="logo">NANU WIKI</div>
+        <div class="logo">NAMU WIKI</div>
         <input type="text" class="search-bar" placeholder="검색">
     </header>
 
     <div class="wrapper">
         <h1>너에게 닿는 계절</h1>
 
-        <!-- 인포박스 -->
+        <!-- 인포박스 (여기에 이미지가 삽입되었습니다!) -->
         <aside class="infobox">
             <div class="infobox-title">너에게 닿는 계절</div>
             <img src="https://raw.githubusercontent.com/ggim17110-star/HR/refs/heads/main/%EC%A0%9C%EB%AA%A9%EC%9D%84%20%EC%9E%85%EB%A0%A5%ED%95%B4%EC%A3%BC%EC%84%B8%EC%9A%94..png" alt="Cover" class="infobox-img">
@@ -177,13 +178,11 @@
         </table>
 
         <h2 id="characters">4. 등장인물</h2>
-        <!-- 여기에 링크가 삽입되었습니다 -->
         <a href="https://ggim17110-star.github.io/HR/" target="_blank" class="main-article">메인 문서: 너에게 닿는 계절/등장인물</a>
         <p>
             주인공 <strong>신도 카이토</strong>를 중심으로 한 하렘 구도가 명확하다. <br>
             특이한 점은 원작에서 거의 비중이 없던 <strong>'주인공의 여동생'</strong>이 존재한다는 것인데, 최근 2차 창작이나 팬 게임에서는 이 여동생이 제6의 히로인(?) 혹은 세계관 최강자로 묘사되기도 한다.
         </p>
-        <!-- 본문 내 링크도 삽입되었습니다 -->
         <p>자세한 내용은 <a href="https://ggim17110-star.github.io/HR/" target="_blank" class="wiki-link">/등장인물</a> 문서 참조.</p>
 
         <h2 id="evaluation">5. 평가</h2>
@@ -221,5 +220,4 @@
     </div>
 
 </body>
-
 </html>
